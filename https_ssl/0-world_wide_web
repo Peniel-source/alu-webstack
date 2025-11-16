@@ -30,7 +30,7 @@ if [ -z "$SUBDOMAIN" ]; then
 	sleep 0.3
     done
 else
-    echo "Auditing specific subdomain: $SUBDOMAIN.$DOMAIN"
+    #echo "Auditing specific subdomain: $SUBDOMAIN.$DOMAIN"
         
     audit_subdomain "$SUBDOMAIN" "$DOMAIN"
 fi
