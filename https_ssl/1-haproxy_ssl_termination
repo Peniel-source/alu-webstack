@@ -33,7 +33,6 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-
 frontend www-https
     bind *:443 ssl crt /etc/haproxy/certs/www.penworks.tech.pem
     reqadd X-Forwarded-Proto:\ https
@@ -47,4 +46,5 @@ frontend www-http
 backend www-backend
     balance roundrobin
     redirect scheme https if !{ ssl_fc }
-    server web-01 127.0.0.1:80 check
+    server web-01 44.202.19.71:80 check
+    server web-02 54.235.224.228:80 check
