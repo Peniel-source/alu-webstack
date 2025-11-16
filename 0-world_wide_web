@@ -28,6 +28,7 @@ if [ -z "$SUBDOMAIN" ]; then
 
     for SUB in "${SUBDOMAINS[@]}"; do
         audit_subdomain "$SUB" "$DOMAIN"
+	sleep 0.3
     done
 else
     echo "Auditing specific subdomain: $SUBDOMAIN.$DOMAIN"
