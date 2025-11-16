@@ -23,7 +23,7 @@ if [ -z "$SUBDOMAIN" ]; then
     echo "Auditing default subdomains for: $DOMAIN"
 
     # Using the required subdomains from the original prompt
-    SUBDOMAINS=("www" "6909-lb-01" "6909-web-01" "6909-web-02")
+    SUBDOMAINS=("www" "lb-01" "web-01" "web-02")
 
     for SUB in "${SUBDOMAINS[@]}"; do
         audit_subdomain "$SUB" "$DOMAIN"
