@@ -20,7 +20,7 @@ DOMAIN="$1"
 SUBDOMAIN="$2"
 
 if [ -z "$SUBDOMAIN" ]; then
-    echo "Auditing default subdomains for: $DOMAIN"
+    #echo "Auditing default subdomains for: $DOMAIN"
 
     # Using the required subdomains from the original prompt
     SUBDOMAINS=("www" "lb-01" "web-01" "web-02")
