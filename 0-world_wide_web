@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Description: Audits A records for specified subdomains using dig and awk.
 # Usage: ./0-world_wide_web <domain> [subdomain]
 
